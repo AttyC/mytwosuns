@@ -84,6 +84,7 @@ h1 {
   color: inherit;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
+  font-weight: 300;
   line-height: 1.1;
   color: #1B998B;
   opacity: 0.8;
