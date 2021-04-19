@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
@@ -41,8 +41,7 @@ const Layout = ({ children }) => {
           }}
         >
           <span className="copyright"> © Atty Ward {new Date().getFullYear()}, Built with
-          {` `}
-            <a href="https://www.gatsbyjs.com">Gatsby</a></span>
+             &nbsp;<a href="https://www.gatsbyjs.com">Gatsby</a></span>
         </footer>
       </div>
     </>

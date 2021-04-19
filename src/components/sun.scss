@@ -2,9 +2,11 @@
   display: flex;
   align-items: center;
   background-color: #2D3047;
+  margin-bottom: 4rem;
+
 }
 
-#tsparticles {
+#sun #tsparticles {
   height: 60vh;
   width: 50vw;
   position: absolute;
@@ -28,7 +30,6 @@
   margin-left: 3%;
   border-radius: 59%;
   filter: blur(6px);
-
 }
 
 .copyright {
@@ -63,16 +64,11 @@
     box-shadow: inset 0px 0px 40px 40px#ffeb3b8f;
   }
 
-
   60% {
     border-radius: 50%;
     background: radial-gradient( #fc46b0b9 56%, #fbdf3f);
     box-shadow: inset 0px 0px 30px 30px#ffeb3b8f;
   }
-
-  // 60% {
-  //   background: radial-gradient(farthest-side at 60% #fc46b0b9 44%, #fbdf3f);
-  // }
 
   70% {
     background: radial-gradient( #fc46b0b9 52%, #fbdf3f);

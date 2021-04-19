@@ -1,28 +1,33 @@
-
 import * as React from "react"
+import { Link } from "gatsby"
+
 import Particles from 'react-particles-js';
-import "./sun.scss"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+import '../components/pixelart.scss'
+
 
 const particleParams = {
   "particles": {
     "number": {
-      "value": 100,
+      "value": 2000,
       "density": {
         "enable": true,
-        "value_area": 400
+        "value_area": 200
       }
     },
     color: {
       value: ["#FFD300", "#E86363"]
     },
     "shape": {
-      "type": ["circle", "star", "square"],
+      "type": "square",
       "stroke": {
-        "width": 0,
-        "color": "#fff"
+        "width": 1,
+        "color": "hotpink"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 8
       },
       "image": {
         "src": "img/github.svg",
@@ -34,19 +39,19 @@ const particleParams = {
       "value": 0.7,
       "random": true,
       "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 0.1,
+        "enable": false,
+        "speed": 3,
+        "opacity_min": 0,
         "sync": false
       }
     },
     "size": {
       "value": 10,
-      "random": true,
+      "random": false,
       "anim": {
         "enable": true,
         "speed": 2,
-        "size_min": 0.1,
+        "size_min": 8,
         "sync": true
       }
     },
@@ -58,13 +63,13 @@ const particleParams = {
       "width": 2
     },
     "move": {
-      "enable": true,
-      "speed": 0.5,
-      "direction": "top-right",
-      "random": true,
-      "straight": false,
+      "enable": false,
+      "speed": 1,
+      "direction": "right",
+      "random": false,
+      "straight": true,
       "out_mode": "out",
-      "bounce": true,
+      "bounce": false,
       "attract": {
         "enable": true,
         "rotateX": 600,
@@ -76,7 +81,7 @@ const particleParams = {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse",
       },
       "onclick": {
@@ -114,15 +119,16 @@ const particleParams = {
   "retina_detect": true
 }
 
-const Sun = () => (
-  <>
-    <div id="sun">
-      <div id="circle-wrapper">
-        <div id="circle"></div>
-      </div>
+const SecondPage = () => (
+  <Layout>
+    <SEO title="Page two" />
+    <p>Welcome to pixelsun</p>
+    <div class="pixelart">
       <Particles params={particleParams} />
     </div>
-  </>
+    <a href="http://una.im/sass-pixel-art">Read the blog post!</a>
+    <Link to="/">Go back to the homepage</Link>
+  </Layout>
 )
 
-export default Sun
+export default SecondPage
