@@ -1,0 +1,95 @@
+#sun {
+  display: flex;
+  align-items: center;
+  background-color: #2d3047;
+  margin-bottom: 4rem;
+}
+
+#sun #tsparticles {
+  height: 60vh;
+  width: 50vw;
+  position: absolute;
+  left: 20%;
+  border-radius: 45%;
+}
+
+#circle-wrapper {
+  animation: wobble-article 8s ease-in-out alternate infinite;
+  background: transparent;
+  border-radius: 59%;
+  box-shadow: inset 0px 0px 40px 40px#ffeb3b;
+  width: 40%;
+}
+
+#circle {
+  background: linear-gradient(270deg, #fc466b 50%, #fbdf3f);
+  background-size: 100% 100%;
+  opacity: 0.6;
+  height: 335px;
+  margin-left: 3%;
+  border-radius: 59%;
+  filter: blur(6px);
+}
+
+.copyright {
+  color: #1b998b;
+}
+@keyframes wobble-article {
+  0% {
+    border-width: 2px;
+    background-position: 0% 40%;
+    background: radial-gradient(#fc466ab9 50%, #fbdf3f);
+  }
+  10% {
+    border-radius: 50%;
+    background: radial-gradient(#fc46b0b9 52%, #fbdf3f);
+    box-shadow: inset 0px 0px 40px 40px#ffeb3b8f;
+  }
+
+  20% {
+    border-radius: 50%;
+    background: radial-gradient(#fc46b0b9 54%, #fbdf3f);
+    box-shadow: inset 0px 0px 40px 40px#ffeb3b8f;
+  }
+  30% {
+    border-radius: 50%;
+    background: radial-gradient(#fc46b0b9 56%, #fbdf3f);
+    box-shadow: inset 0px 0px 40px 40px#ffeb3b8f;
+  }
+
+  50% {
+    border-radius: 50%;
+    background: radial-gradient(#fc46b0b9 58%, #fbdf3f);
+    box-shadow: inset 0px 0px 40px 40px#ffeb3b8f;
+  }
+
+  60% {
+    border-radius: 50%;
+    background: radial-gradient(#fc46b0b9 56%, #fbdf3f);
+    box-shadow: inset 0px 0px 30px 30px#ffeb3b8f;
+  }
+
+  70% {
+    background: radial-gradient(#fc46b0b9 52%, #fbdf3f);
+    box-shadow: inset 0px 0px 40px 40px#ffeb3b6b;
+  }
+  80% {
+    border-radius: 50%;
+    background: radial-gradient(#df2e51e3 52%, #fbdf3f);
+    box-shadow: inset 0px 0px 40px 40px#ffeb3b8f;
+  }
+  90% {
+    border-radius: 50%;
+    background: radial-gradient(#df2e51e3 48%, #fbdf3f);
+    box-shadow: inset 0px 0px 40px 40px#ffeb3b8f;
+  }
+
+  100% {
+    background: radial-gradient(#df2e51e3 50%, #fbdf3f);
+  }
+}
+.vikids {
+  background: white;
+  width: 50%;
+  margin: auto;
+}
